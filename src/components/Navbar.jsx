@@ -25,7 +25,7 @@ const Navbar = ({ theme, setTheme }) => {
             <a onClick={() => setsidebarOpen(false)} href="#services" className='sm:hover:border-b'>Services</a>
             <a onClick={() => setsidebarOpen(false)} href="#employers" className='sm:hover:border-b'>Employers</a>
             <a onClick={() => setsidebarOpen(false)} href="#jobSeekers" className='sm:hover:border-b'>Job Seekers</a>
-            <a onClick={() => setsidebarOpen(false)} href="#contactus" className='sm:hover:border-b'>Contact Us</a>
+            <a onClick={() => setsidebarOpen(false)} href="#contact-us" className='sm:hover:border-b'>Contact Us</a>
         </div>
 
         <div className='flex items-center gap-2 sm:gap-4'>

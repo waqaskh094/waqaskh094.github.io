@@ -3,6 +3,9 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import TrustedBy from './components/TrustedBy'
 import Services from './components/Services'
+import Industries from './components/Industries'
+import Teams from './components/Teams'
+import ContactUs from './components/ContactUs'
 
 const App = () => {
 
@@ -14,6 +17,9 @@ const App = () => {
       <Hero />
       <TrustedBy />
       <Services />
+      <Industries />
+      <Teams />
+      <ContactUs />
     </div>
   )
 }
