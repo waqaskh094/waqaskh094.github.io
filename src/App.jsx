@@ -6,6 +6,7 @@ import Services from './components/Services'
 import Industries from './components/Industries'
 import Teams from './components/Teams'
 import ContactUs from './components/ContactUs'
+import Footer from './components/Footer'
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
       <Industries />
       <Teams />
       <ContactUs />
+      <Footer theme={theme}/>
     </div>
   )
 }
