@@ -3,6 +3,7 @@ import assets from '../assets/assets'
 import ThemeToggleBtn from './ThemeToggleBtn';
 import Logo from './Logo';
 import { motion } from "motion/react"
+import { Link } from 'react-router-dom'
 
 const Navbar = ({ theme, setTheme }) => {
 
@@ -28,8 +29,8 @@ const Navbar = ({ theme, setTheme }) => {
 
             <a onClick={() => setsidebarOpen(false)} href="#" className='sm:hover:border-b'>Home</a>
             <a onClick={() => setsidebarOpen(false)} href="#services" className='sm:hover:border-b'>Services</a>
-            <a onClick={() => setsidebarOpen(false)} href="#employers" className='sm:hover:border-b'>Employers</a>
-            <a onClick={() => setsidebarOpen(false)} href="#jobSeekers" className='sm:hover:border-b'>Job Seekers</a>
+            <Link to="/employers" onClick={() => setsidebarOpen(false)}>Employers</Link>
+            <Link to="/jobseekers" onClick={() => setsidebarOpen(false)}>Job Seekers</Link>
             <a onClick={() => setsidebarOpen(false)} href="#contact-us" className='sm:hover:border-b'>Contact Us</a>
         </div>
 
