@@ -1,5 +1,6 @@
 // src/pages/JobSeekers.jsx
 import React from "react";
+import { Link } from 'react-router-dom'
 import { motion } from "motion/react";
 import {
   Briefcase,
@@ -12,7 +13,8 @@ import {
   TrendingUp,
 } from "lucide-react"; // make sure all icons are imported
 import assets from "../assets/assets";
-import JobSeekersWorkflow from "../components/EmployersWorkFlow/JobsSeekersWorkflow";
+import JobSeekersWorkflow from "../components/Workflows/JobsSeekersWorkflow";
+import JobSeekersMobileWorkflow from "../components/Workflows/JobSeekersMobileWorkflow"
 
 const JobSeekers = () => {
   return (
@@ -97,12 +99,9 @@ const JobSeekers = () => {
             viewport={{ once: true }}
             className="mt-8"
           >
-            <a
-              href="/register"
-              className="inline-block bg-primary text-white px-8 py-3 rounded-full font-medium hover:scale-105 transition-transform shadow-md"
-            >
-              REGISTER FOR A JOB
-            </a>
+            
+            <Link to="/JobOpenings" className="inline-block bg-primary text-white px-8 py-3 rounded-full font-medium hover:scale-105 transition-transform shadow-md" onClick={() => setsidebarOpen(false)}>JOB OPENINGS</Link>
+            
           </motion.div>
         </div>
 
@@ -123,11 +122,12 @@ const JobSeekers = () => {
       </section>
 
       {/* Recruiting Opportunities Section */}
-      <section className="py-20 px-6 sm:px-12 lg:px-24 xl:px-40 bg-white dark:bg-black text-center lg:text-left">
+      <section className="pt-0 pb-20 px-6 sm:px-12 lg:px-24 xl:px-40 bg-white dark:bg-black text-center lg:text-left">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Left Content */}
           <div className="flex-1 flex items-center justify-center">
             <JobSeekersWorkflow />
+            <JobSeekersMobileWorkflow />
           </div>
 
           

@@ -38,7 +38,7 @@ const JobSeekersWorkflow = () => {
     >
       {/* Left Content */}
       <div className="flex-1 sticky top-0 h-screen flex flex-col justify-center px-6 text-center lg:text-left">
-        <h2 className="text-5xl lg:text-6xl font-extrabold mb-6 text-gray-800 dark:text-white leading-tight">
+        <h2 className="pt-48 text-5xl lg:text-6xl font-extrabold mb-6 text-gray-800 dark:text-white leading-tight">
           Our Application Process
         </h2>
         <p className="text-gray-600 dark:text-gray-300 max-w-md text-base mb-8">
@@ -87,7 +87,7 @@ const JobSeekersWorkflow = () => {
       </div>
 
       {/* Right Stacked Workflow Cards */}
-      <div className="flex-1 sticky top-0 h-screen flex items-center justify-center relative">
+      <div className="flex-1 sticky top-0 h-screen flex items-center justify-center pt-8">
         {jobSeekerSteps.map((step, i) => {
           const isActive = i === activeIndex;
           const isPast = i < activeIndex;

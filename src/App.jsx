@@ -10,6 +10,8 @@ import ContactUs from './components/ContactUs'
 import Footer from './components/Footer'
 import Employers from './pages/Employers'
 import JobSeekers from './pages/JobSeekers'
+import RequestTalent from './pages/RequestTalent'
+import JobOpenings from './pages/JobOpenings'
 
 const App = () => {
 
@@ -36,6 +38,8 @@ const App = () => {
          
           <Route path="/employers" element={<Employers />} />
           <Route path="/jobseekers" element={<JobSeekers />} />
+          <Route path="/RequestTalent" element={<RequestTalent />} />
+          <Route path="/JobOpenings" element={<JobOpenings />} />
         </Routes>
 
         <Footer theme={theme} />

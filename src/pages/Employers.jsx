@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "motion/react";
 import assets from "../assets/assets";
-import EmployersWorkflow from "../components/EmployersWorkFlow";
+import EmployersWorkflow from "../components/Workflows";
+import { Link } from 'react-router-dom'
 
 const Employers = () => {
   return (
@@ -73,12 +74,12 @@ const Employers = () => {
             viewport={{ once: true }}
             className="mt-8"
           >
-            <a
-              href="/request-talent"
+            <Link
+              to="/RequestTalent"
               className="inline-block bg-primary text-white px-8 py-3 rounded-full font-medium hover:scale-105 transition-transform shadow-md"
             >
               REQUEST TALENT
-            </a>
+            </Link>
           </motion.div>
         </div>
 

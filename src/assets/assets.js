@@ -33,6 +33,7 @@ import hero1_img from './hero1_img.png'
 import welder from './welder.jpg'
 import worker1 from './worker1.jpg'
 import office from './office.jpg'
+import contactUs from './contactUs.jpg'
 
 
 export const company_logos = [
@@ -71,6 +72,7 @@ const assets = {
   menu_icon_dark,
   sun_icon,
   moon_icon,
+  contactUs,
   welder,
   worker1,
   office

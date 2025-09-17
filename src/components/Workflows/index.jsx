@@ -3,7 +3,7 @@ import React from "react";
 import DesktopWorkflow from "./DesktopWorkflow";
 import MobileWorkflow from "./MobileWorkflow";
 
-const EmployersWorkflow = () => {
+const Workflows = () => {
   return (
     <>
       <DesktopWorkflow />
@@ -12,4 +12,4 @@ const EmployersWorkflow = () => {
   );
 };
 
-export default EmployersWorkflow;
+export default Workflows;
