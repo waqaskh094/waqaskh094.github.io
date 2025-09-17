@@ -15,7 +15,7 @@ const MobileWorkflow = () => {
   const handleReset = () => setIndex(0);
 
   return (
-    <section className="lg:hidden w-full bg-white dark:bg-gray-900 py-12">
+    <section className="lg:hidden w-full bg-white dark:bg-black py-12">
       <div className="px-4 text-center mb-8">
         <h2 className="text-3xl font-extrabold text-gray-800 dark:text-white">
           Our Hiring Process
